@@ -1,13 +1,16 @@
 GET http://localhost:3000
 
-########
+###
 
 POST http://localhost:3000
+# Ici, on doit ajouter un content-type pour que la requête comprenne
+Content-Type: application/json
 
 { "method" : "POST" }
 
-########
+###
 
 PUT http://localhost:3000
+Content-Type: application/json
 
 { "method" : "PUT" }
