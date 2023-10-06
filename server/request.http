@@ -1,0 +1,14 @@
+GET http://localhost:3000
+
+{ "method" : "GET" }
+########
+
+POST http://localhost:3000
+
+{ "method" : "POST" }
+
+########
+
+PUT http://localhost:3000
+
+{ "method" : "PUT" }
