@@ -1,16 +1,72 @@
 GET http://localhost:3000
 
 ###
-
 POST http://localhost:3000
-# Ici, on doit ajouter un content-type pour que la requête comprenne
 Content-Type: application/json
 
-{ "method" : "POST" }
-
+{
+    "name": "John"
+}
 ###
-
 PUT http://localhost:3000
 Content-Type: application/json
 
-{ "method" : "PUT" }
+{
+    "name": "John"
+}
+
+###
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "j5@j.com",
+    "password": "Azerty123!"
+}
+
+###
+GET http://localhost:3000/users/3
+
+###
+PATCH http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+    "password": "Doe23;:42"
+}
+
+###
+DELETE http://localhost:3000/users/1
+
+###
+PATCH http://localhost:3000/users/5
+Content-Type: application/json
+
+{
+    "lastname": "Doe2!1zez31425"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "j5@j.com",
+    "password": "Azerty123!"
+}
+###
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Eggplant",
+    "description": "Eggplant (US, CA, AU, NZ, PH), aubergine (UK, IE), brinjal (IN, SG, MY, ZA), or baigan (GY) is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.",
+    "unit_price": 1.2,
+    "stock_quantity": 69,
+    "category": "alimentation"
+}
